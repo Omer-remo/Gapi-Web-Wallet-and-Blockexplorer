@@ -24,10 +24,10 @@ SECRET_KEY = 'j54w1jdm@o(7vmnv=9_duz$c8zg-brf3z%i8yf%9@o(@k4fezu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','159.89.18.85','159.89.18.85']
+ALLOWED_HOSTS = ['localhost','your_host_address','your_host_ıp']
 #Currency and Node definations
 CURRENCY = "GAPI"
-NODE_OWNER_WALLET = "GAPIb69f414193b70a5fb6d152150767fa1"
+NODE_OWNER_WALLET = "GAPI58cde6448cdfec78d0407658c52e5c"
 
 
 # Application definition
