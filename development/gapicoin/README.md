@@ -1,10 +1,10 @@
-# Wellcome to gapicoin
+# Welcome to Gapi-Web-Wallet-and-Blockexplorer
 
 It is the most popular and original gapicoin python script. The code is exceptionally portable and has been used successfully on a very broad range of ubuntu systems and hardware.
 
 ## Contact
 
-[![Facebook](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/gapicoin-github/)
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/gapicoin.svg?style=social)](https://twitter.com/gapicoin/)
 [![GitHub Issues](https://img.shields.io/badge/open%20issues-0-yellow.svg)](https://github.com/Omer-remo/Gapi-Web-Wallet-and-Blockexplorer/issues)
 
 
