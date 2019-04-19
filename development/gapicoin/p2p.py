@@ -24,9 +24,9 @@ from autobahn.twisted.websocket import WebSocketClientFactory, \
 connectWS
 
 
-BLIST = [u"ws://139.59.130.70:9000"]
+BLIST = [u"ws://your_host_address:9000"]
 
-BLISTTWO =  ["139.59.130.70"]
+BLISTTWO =  ["your_host_address"]
 
 ni.ifaddresses('eth0')
 ip = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr']
@@ -40,7 +40,7 @@ class BroadcastServerProtocol(WebSocketServerProtocol):
 
     def onMessage(self, payload, isBinary):
         if not isBinary:
-            print("isBinary olmak zorunda")
+            print("is Binary olmak zorunda")
         else:
             print(payload)
             print(json.loads(payload))
@@ -61,7 +61,7 @@ class BroadcastServerProtocol(WebSocketServerProtocol):
 clients = []
 
 class BroadcastServerFactory(WebSocketServerFactory):
-    #self.broadcast serverda yayn yapar..
+    
 
     def __init__(self, url):
         WebSocketServerFactory.__init__(self, url)
@@ -92,9 +92,9 @@ class MyClientProtocol(WebSocketClientProtocol):
 
     def onOpen(self):
         print("WebSocket connection open.")
-        #kullanıcı servera ilk bağlandığı zaman bu mesaj gönderilir.
+        
         def hello():
-            #self.sendMessage(u"Hello, from 138.68.81.114  !".encode('utf8'))
+            #self.sendMessage(u"Hello, from your_host_address  !".encode('utf8'))
             data = {}
             data["server"] = True
             data["host"] = ip
@@ -117,11 +117,11 @@ class MyClientProtocol(WebSocketClientProtocol):
             else:
                 payloaded = json.loads(payload.decode('utf-8'))
                 if 'sender' in payloaded:
-                    data['sender'] = str(payloaded["sender"])                                       #1
-                    data['receiver'] = str(payloaded["receiver"])                                   #2
-                    data['previous_hash'] = str(transaction.objects.all().last().blockhash)         #3
-                    data['amount'] = str(payloaded["amount"])                                       #4
-                    data['timestamp'] = str(payloaded["timestamp"])                                 #5
+                    data['sender'] = str(payloaded["sender"])                                       
+                    data['receiver'] = str(payloaded["receiver"])                                   
+                    data['previous_hash'] = str(transaction.objects.all().last().blockhash)         
+                    data['amount'] = str(payloaded["amount"])                                       
+                    data['timestamp'] = str(payloaded["timestamp"])                                 
                     data["nonce"] = str(payloaded["nonce"])
                     data = collections.OrderedDict(sorted(data.items()))
                     datashash  = hashlib.sha256(json.dumps(data).encode('utf-8')).hexdigest()
@@ -170,13 +170,13 @@ class MyClientProtocol(WebSocketClientProtocol):
     def onClose(self, wasClean, code, reason):
         print("WebSocket connection closed: {0}".format(reason))
         def byebye():
-            self.sendMessage(u"Good byee, from 138.68.81.114  !".encode('utf8'))
+            self.sendMessage(u"Good byee, from your_host2_address  !".encode('utf8'))
 
         byebye()
 
 
 def syncfirst():
-    r = requests.get('http://gapicoin.com/api/v1/alltransactions/')
+    r = requests.get('http://$yourURL.com/api/v1/alltransactions/')
     alltrans = r.json()
     for x in alltrans["alltestsarecomplated"]:
         try:
@@ -213,9 +213,9 @@ if __name__ == '__main__':
     factory.protocol = BroadcastServerProtocol
     reactor.listenTCP(9000, factory)
 
-    factory = WebSocketClientFactory(u"ws://gapicoin.com/:9000")
+    factory = WebSocketClientFactory(u"ws://$yourURL.com/:9000")
     factory.protocol = MyClientProtocol
 
-    reactor.connectTCP(u"139.59.130.70/", 9000, factory)
+    reactor.connectTCP(u"$yourURL.com/", 9000, factory)
 
     reactor.run()
