@@ -1,0 +1,16 @@
+  {
+    "port": "22",
+    "uploadOnSave": true,
+    "useAtomicWrites": true,
+    "deleteLocal": false,
+    "target": "/opt/venv/gapicoin",
+    "ignore": [
+      ".remote-sync.json",
+      ".git/**"
+    ],
+    "password": "Ue4Gy3Mm5",
+    "watch": [],
+    "transport": "scp",
+    "hostname": "138.68.81.114",
+    "username": "root"
+  }

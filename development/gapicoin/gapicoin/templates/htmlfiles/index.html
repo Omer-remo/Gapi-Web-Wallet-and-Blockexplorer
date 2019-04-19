@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>GAPI COIN | THE BUSINESS WORLD &amp; CRYPTOCURRENCY</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="/static/css/font-face.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+	<link rel="shortcut icon"  href="/static/images/icon/avatar-01.jpg"/>
+
+    <!-- Bootstrap CSS-->
+    <link href="/static/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="/static/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="/static/css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="/static/images/icon/logo.png">
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a href="/">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="/transactions">
+                                <i class="fas fa-table"></i>Transactions</a>
+                        </li>
+                        <li>
+                            <a href="/login">
+                                <i class="far fa-hand-o-right"></i>Send</a>
+                        </li>
+                        <li>
+                            <a href="/login">
+                                <i class="fas fa-location-arrow"></i>Login</a>
+                        </li>
+                        <li>
+                            <a href="/api/v1/createnewwallet">
+                                <i class="fas fa-key"></i>New Wallet</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="/static/images/icon/logo.png">
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="has-sub">
+                            <a href="/">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="/transactions">
+                                <i class="fas fa-table"></i>Transactions</a>
+                        </li>
+                        <li>
+                            <a href="/login">
+                                <i class="far fa-hand-o-right"></i>Send</a>
+                        </li>
+                        <li>
+                            <a href="/login">
+                            <i class="fas fa-location-arrow"></i>Login</a>
+                        </li>
+                        <li>
+                            <a href="/api/v1/createnewwallet">
+                                <i class="fas fa-key"></i>New Wallet</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="">
+                              <input class="au-input au-input--xl" type="text" name="search" placeholder="Senderwallet/Receiverwallet/Prevhash/Blockhash..." />
+                              <button class="au-btn--submit" onClick="location.href='/api/v1/alltransactions'" type="button">
+                                  <i class="zmdi zmdi-search"></i>
+                              </button>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">overview</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-account-o"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>109468</h2>
+                                                <span>Online Wallet</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-shopping-cart"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>44,281</h2>
+                                                <span>items solid</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-calendar-note"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>19,386</h2>
+                                                <span>total</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-money"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>1,060,386</h2>
+                                                <span>Highest Transfers</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="au-card recent-report">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2">Recent Reports</h3>
+                                        <div class="chart-info">
+                                            <div class="chart-info__left">
+                                                <div class="chart-note">
+                                                    <span class="dot dot--blue"></span>
+                                                    <span>products</span>
+                                                </div>
+                                                <div class="chart-note mr-0">
+                                                    <span class="dot dot--green"></span>
+                                                    <span>services</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-info__right">
+                                                <div class="chart-statis">
+                                                    <span class="index incre">
+                                                        <i class="zmdi zmdi-long-arrow-up"></i>25%</span>
+                                                    <span class="label">Products</span>
+                                                </div>
+                                                <div class="chart-statis mr-0">
+                                                    <span class="index decre">
+                                                        <i class="zmdi zmdi-long-arrow-down"></i>10%</span>
+                                                    <span class="label">Services</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recent-report__chart">
+                                            <canvas id="recent-rep-chart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card chart-percent-card">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 tm-b-5">Supply %</h3>
+                                        <div class="row no-gutters">
+                                            <div class="col-xl-6">
+                                                <div class="chart-note-wrap">
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--blue"></span>
+                                                        <span>Circulating Supply: 42 M</span>
+                                                    </div>
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--red"></span>
+                                                        <span>Max Supply: 458 M</span>
+                                                    </div>
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--black"></span>
+                                                        <span>Total Supply: 500 M</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="percent-chart">
+                                                    <canvas id="percent-chart"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
+                                    <div class="au-card-title" style="background-image:url('/static/images/bg-title-01.jpg');">
+                                        <div class="bg-overlay bg-overlay--blue"></div>
+                                        <h3>
+                                            <i class="zmdi zmdi-account-calendar"></i>
+												<script>
+
+												var mydate=new Date()
+												var year=mydate.getYear()
+												if (year < 1000)
+												   year+=1900
+												var month=mydate.getMonth()
+												var daym=mydate.getDate()
+												if (daym<10)
+												   daym="0"+daym
+												var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+
+
+												document.write("<font><b> "+montharray[month]+" "+daym+", "+year+"</b></font>")
+
+												</script>
+												</h3>
+
+                                    </div>
+                                    <div class="au-task js-list-load">
+                                        <div class="au-task__title">
+                                            <p>Roadmap for Gapi Coin</p>
+                                        </div>
+                                        <div class="au-task-list js-scrollbar3">
+                                            <div class="au-task__item au-task__item--danger">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Wallet Prototype MVP Publication</a>
+                                                    </h5>
+                                                    <span class="time">2019 MAY-JUNE</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--warning">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Blockexplorer Publication</a>
+                                                    </h5>
+                                                    <span class="time">2019 MAY-JUNE</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--primary">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Security Audit</a>
+                                                    </h5>
+                                                    <span class="time">2019 MAY-JUNE</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--success">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Crowdfunding Integration</a>
+                                                    </h5>
+                                                    <span class="time">2019 MAY-JUNE</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--danger js-load-item">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Transition to convertibility</a>
+                                                    </h5>
+                                                    <span class="time">2019 MAY-JUNE</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--warning js-load-item">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">GAPI Blockchain School Planning</a>
+                                                    </h5>
+                                                    <span class="time">2019 MAY-JUNE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="au-task__footer">
+                                            <button class="au-btn au-btn-load js-load-btn">load more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
+                                    <div class="au-card-title" style="background-image:url('/static/images/bg-title-02.jpg');">
+                                        <div class="bg-overlay bg-overlay--blue"></div>
+                                        <h3>
+                                            <i class="zmdi zmdi-comment-text"></i>New Messages</h3>
+
+                                    </div>
+									<form action="https://formspree.io/destek@gapicoin.org" method="post">
+                                    <div class="au-inbox-wrap js-inbox-wrap">
+                                        <div class="au-message js-list-load">
+												<div class="card">
+													<div class="card-body card-block">
+														<div class="has-success form-group">
+															<label for="contact_author" class=" form-control-label">Name</label>
+															<input type="text" id="contact_author"  class="form-control" required>
+														</div>
+														<div class="has-success form-group">
+															<label for="inputWarning2i" class=" form-control-label">Email</label>
+															<input type="email" id="_replyto" name="_replyto" class="form-control" required>
+														</div>
+														<div class="has-success has-feedback form-group">
+															<label for="inputError2i" class=" form-control-label">Subject</label>
+															<input type="text" id="inputError2i"  class="form-control" required>
+														</div>
+														<div class="col col-md-3">
+															<label for="textarea-input" class=" form-control-label">Message</label>
+														</div>
+														<div class="col-12 col-md-12">
+															<textarea name="textarea-input" id="textarea-input" rows="6" class="form-control" required></textarea>
+														</div>
+  												<div class="au-task__footer">
+  													<input type="hidden" name="_next" value="http://www.gapicoin.com">
+  													<button type="submit" class="btn btn-outline-secondary btn-lg">Submit</button>
+  												</div>
+  											</form>
+													</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    Copyright &copy; 2018-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script>
+									<a target="_blank" href="https://gapicoin.org">GAPI Coin</a>. All rights reserved.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+
+    <!-- Jquery JS-->
+    <script src="/static/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="/static/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="/static/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="/static/vendor/slick/slick.min.js">
+    </script>
+    <script src="/static/vendor/wow/wow.min.js"></script>
+    <script src="/static/vendor/animsition/animsition.min.js"></script>
+    <script src="/static/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="/static/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="/static/vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="/static/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="/static/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="/static/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="/static/vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>
