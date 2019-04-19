@@ -8,9 +8,10 @@
       ".remote-sync.json",
       ".git/**"
     ],
-    "password": "Ue4Gy3Mm5",
+    "password": "your_password",
     "watch": [],
     "transport": "scp",
-    "hostname": "138.68.81.114",
+    "hostname": "your_host_name",
     "username": "root"
   }
+
