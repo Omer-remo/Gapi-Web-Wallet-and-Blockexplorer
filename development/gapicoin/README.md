@@ -4,17 +4,17 @@ It is the most popular and original gapicoin python script. The code is exceptio
 
 ## Contact
 
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/gapicoin-github/)
-[![GitHub Issues](https://img.shields.io/badge/open%20issues-0-yellow.svg)](https://github.com/omgbbqhaxx/gapicoin/issues)
+[![Facebook](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/gapicoin-github/)
+[![GitHub Issues](https://img.shields.io/badge/open%20issues-0-yellow.svg)](https://github.com/Omer-remo/Gapi-Web-Wallet-and-Blockexplorer/issues)
 
-- Chat in [gapicoin-github channel on Gitter](https://gitter.im/gapicoin-github).
+
 - Report bugs, issues or feature requests using [GitHub issues](issues/new).
 
 
 
 ## Getting Started
 
-The gapicoin Documentation site hosts the **[gapicoin homepage](http://gapicoin.com/)**, which
+The Gapicoin Documentation site hosts the **[gapicoin homepage](http://gapicoin.com/)**, which
 has a Quick Start section.
 
 Operating system | Status
@@ -117,7 +117,7 @@ circusctl quit --waiting
 
 
 ## Donations
-  * Project gapicoin Wallet : `GAPI9b38133cea9c1b19ae0803baf7932d5`
+  * Project gapicoin Wallet : `GAPI58cde6448cdfec78d0407658c52e5c`
 
 ## License
 
