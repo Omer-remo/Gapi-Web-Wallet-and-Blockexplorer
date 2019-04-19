@@ -46,7 +46,7 @@ class BroadcastServerProtocol(WebSocketServerProtocol):
             else:
                 print(payload["message"])
                 payload["host"] = ip
-                payload = json.dumps(payload) #tekrar şifreleyip server ile paylaş
+                payload = json.dumps(payload) 
                 self.factory.broadcast(payload)
 
     def connectionLost(self, reason):
