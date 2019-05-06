@@ -229,6 +229,8 @@ def sendgapicoin(request):
             ws.send(payload)
 
             allify['response'] = "ok"
+            allify['explain'] = "You currency transfered successfuly"
+
             allify['datashash'] = datashash
             allify['datastring'] = json.dumps(allify)
             return HttpResponse(json.dumps(allify), content_type = "application/json")
