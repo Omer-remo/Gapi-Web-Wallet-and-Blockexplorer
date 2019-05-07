@@ -90,28 +90,28 @@ circusctl quit --waiting
 # REST APIs
 
 ## GET Endpoints
- * `http://$yourURL.com/api/v1/createnewwallet/` - allows to create new wallet and private key.
+ * `http://gapicoin.com/api/v1/createnewwallet/` - to create new wallet and private key.
 
- * `http://$yourURL.com/api/v1/alltransactions/` - allows to get all transactions from database.
+ * `http://gapicoin.com/api/v1/alltransactions/` -  to get all transactions from database.
 
- * `http://$yourURL.com/api/v1/gettransaction/$transactionID` - allows to get transaction details.
+ * `http://gapicoin.com/api/v1/gettransaction/$transactionID` -  to get transaction details.
 
- * `http://$yourURL.com/api/v1/getwalletfrompkey/$publicKey` - allows to create new wallet and private key.
+ * `http://gapicoin.com/api/v1/getwalletfrompkey/$publicKey` -  to create new wallet and private key.
 
- * `http://$yourURL.com/api/v1/getpublickeyfromprikey/$privateKEY` - allows to get public key from private key.
+ * `http://gapicoin.com/api/v1/getpublickeyfromprikey/$privateKEY` -  to get public key from private key.
 
- * `http://$yourURL.com/api/v1/getbalance/$wallet` - allows to get last balance from wallet.
+ * `http://gapicoin.com/api/v1/getbalance/$wallet` -  to get last balance from wallet.
 
- *  `http://$yourURL.com/api/v1/getwalletdetails/$wallet` - allows to get all wallet history.
+ *  `http://gapicoin.com/api/v1/getwalletdetails/$wallet` -  to get all wallet history.
 
 
 
 
 
 ## POST Endpoints
-  * `http://$yourURL.com/api/v1/sendgapicoin/`
+  * `http://gapicoin.com/api/v1/sendgapicoin/`
   * `sprikey` sender's private key
-  * `receiverwalletallows`  receiver's wallet
+  * `receiverwallet`  receiver's wallet
   * `amount`  and amount.
   ___
 
